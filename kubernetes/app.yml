@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-weatherapp
+  labels:
+    app: go-weatherapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+       app: go-weatherapp
+  template:
+    metadata:
+      labels:
+        app: go-weatherapp
+    spec:
+       containers:
+          - name: go-weatherapp
+            image: akashgupta0408/go-weatherapp:v2
+            ports:
+             - containerPort: 8080
+
