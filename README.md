@@ -19,9 +19,7 @@ A simple weather application built using **Go (Golang)** that allows users to ch
   
 ## Build and Deploy
 
-### Step 1: Build the Docker Image
-
-To build the Docker image for the Go-WeatherApp, run the following command:
+### Steps:
 
 ```bash
 docker build -t go-weatherapp .
